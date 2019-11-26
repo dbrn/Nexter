@@ -1,0 +1,63 @@
+@keyframes move-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80%{
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80%{
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes logo-pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(.8);
+    opacity: .6;
+  }
+
+  80% {
+      transform: scale(1.1);
+      opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

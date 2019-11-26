@@ -1,0 +1,79 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight:400;
+  line-height: 1.7;
+  /*font-size: 16px;*/
+  color: $color-gray-dark;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 3.5rem;
+    @include enter(move-in-left);
+
+    @include breakpoint-manager(phone) {
+      letter-spacing: 1rem;
+      font-size: 3rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .75rem;
+    @include enter(move-in-right);
+    margin-bottom: 3rem;
+
+    @include breakpoint-manager(phone) {
+      letter-spacing: .5rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  @include gradient-text;
+  letter-spacing: .2rem;
+  transition: all .2s;
+
+  @include breakpoint-manager(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint-manager(phone) {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+
+    @include breakpoint-manager(phone) {
+      transform: skewY(0) skewX(0) scale(1);
+      text-shadow: 0 0 0 transparent;
+    }
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
